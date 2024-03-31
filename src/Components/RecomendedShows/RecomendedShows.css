@@ -1,0 +1,41 @@
+
+.recomended_shows_con{
+    margin-left: 300px;
+    margin-right: 200px;
+    margin-top: -150px;
+    align-items: center;
+    margin-bottom: 20px;
+
+}
+
+
+
+.card-container{
+  display: flex;
+  overflow-x: auto; /* Enable horizontal scrolling */
+  gap: 20px; /* Spacing between cards */
+  padding: 20px;
+  -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;
+    
+}
+.card-container::-webkit-scrollbar {
+    display: none;
+  }
+
+.card {
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    flex: 0 0 auto;
+    min-width: 200px; /* Adjust the minimum width as needed */
+    max-width: 300px; /* Adjust the maximum width as needed */
+    height: 200px; /* Adjust the height as needed */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+    color: #fff;
+
+}
