@@ -8,8 +8,13 @@
 
 }
 
-
-
+.recomended_shows{
+    display: flex;
+    color: white;
+    align-items: center;
+    margin-left: 30px;
+    gap:5px;
+}
 .card-container{
   display: flex;
   overflow-x: auto; /* Enable horizontal scrolling */
@@ -38,4 +43,15 @@
     padding: 20px;
     color: #fff;
 
+}
+.card_details{
+    display: flex;
+    color: white;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.event_name_location{
+    display: flex;
+    flex-direction: column;
+   
 }

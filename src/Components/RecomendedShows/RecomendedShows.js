@@ -27,9 +27,9 @@ const RecomendedShows = () => {
 
   return (
     <div className="recomended_shows_con">
-      <div>
-        <FaArrowRightLong />
+      <div className="recomended_shows">
         <p>Recommended Shows</p>
+        <FaArrowRightLong />
       </div>
       <div className="card-container">
         {Data.length > 0 ? (
@@ -43,14 +43,16 @@ const RecomendedShows = () => {
                 width: "320px",
               }}
             >
-              <div>
-                <h3>{event.eventName}</h3>
+              <div className="card_details">
+              <div className="event_name_location">
+                <h5>{event.eventName}</h5>
                 <p>{event.cityName}</p>
               </div>
-              <div>
+              <div className="event_date_weather">
                 <p>{new Date(event.date).toLocaleDateString()}</p>
                 <p>{event.weather}</p>
               </div>
+             </div>
             </div>
           ))
         ) : (

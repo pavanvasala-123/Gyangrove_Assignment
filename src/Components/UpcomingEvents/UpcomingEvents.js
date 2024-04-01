@@ -1,6 +1,7 @@
 import React ,{useEffect ,useState} from 'react'
 import '../UpcomingEvents/UpcomingEvents.css'
 import { CiLocationOn } from "react-icons/ci";
+import { FaArrowRightLong } from "react-icons/fa6";
 
 
 const UpcomingEvents = () => {
@@ -25,14 +26,16 @@ const UpcomingEvents = () => {
     }, []);
   return (
     <div className="upcoming_event_container">
-      <div>
+      <div className='upcoming_events'>
+      
         <h3>UpcomingEvents</h3>
+        <FaArrowRightLong />
       </div>
       <div className='upcoming_event_cards_container'>
         {Data.length > 0 ? (
           Data.map((event) => (
             <div className="upcoming_event_card" key={event.eventName}>
-            <img src= 'https://cdn.pixabay.com/photo/2016/11/23/15/48/audience-1853662_640.jpg'/>
+            <img src= 'https://cdn.pixabay.com/photo/2016/11/23/15/48/audience-1853662_640.jpg' alt={event.eventName}/>
             <p className='event_date'>{new Date(event.date).toLocaleDateString()}</p>
               <div className='event-details'> 
               <div className='event_name_location'>
